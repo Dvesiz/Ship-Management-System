@@ -14,9 +14,11 @@
 ![Java](https://img.shields.io/badge/Java-17-ED8B00?logo=java)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-**现代化的全栈船舶管理解决方案**
+<img width="1919" height="902" alt="image" src="https://github.com/user-attachments/assets/37e66d3e-4755-46b3-bc86-f55be8065cd0" />
+<img width="1919" height="918" alt="7b925b9d7a1a1a2d17b4201fa836fbe6" src="https://github.com/user-attachments/assets/fba76e08-67fc-4ece-88a8-056cfc943c60" />
+<img width="1919" height="905" alt="aa7ea37e9c39637fee0148c83c852b47" src="https://github.com/user-attachments/assets/6d6d4a86-0160-4574-920e-d27119ecae0b" />
+<img width="1919" height="912" alt="87356a5763ad81eed959e4fe28b06938" src="https://github.com/user-attachments/assets/bc371849-e073-4843-b206-16f0c30f9c83" />
 
-[在线演示](#) | [前端文档](./ship-management-front/) | [后端文档](./ship-manage-backend/) | [API文档](./船舶管理系统后端接口文档.md)
 
 </div>
 
