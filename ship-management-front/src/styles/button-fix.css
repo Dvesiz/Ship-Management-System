@@ -1,0 +1,169 @@
+/* 统一按钮样式修复 */
+
+/* 重置所有按钮的基础样式 */
+.el-button {
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+  border: 1px solid transparent !important;
+  position: relative !important;
+  overflow: hidden !important;
+  height: 32px !important;
+  padding: 0 16px !important;
+  font-size: 14px !important;
+}
+
+/* 主要按钮 */
+.el-button--primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+  border-color: #3b82f6 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2) !important;
+}
+
+.el-button--primary:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  border-color: #2563eb !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* 成功按钮 */
+.el-button--success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  border-color: #10b981 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2) !important;
+}
+
+.el-button--success:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  border-color: #059669 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3) !important;
+}
+
+/* 警告按钮 */
+.el-button--warning {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  border-color: #f59e0b !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.2) !important;
+}
+
+.el-button--warning:hover {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+  border-color: #d97706 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(245, 158, 11, 0.3) !important;
+}
+
+/* 危险按钮 */
+.el-button--danger {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+  border-color: #ef4444 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2) !important;
+}
+
+.el-button--danger:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+  border-color: #dc2626 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(239, 68, 68, 0.3) !important;
+}
+
+/* 默认按钮 */
+.el-button--default {
+  background: #ffffff !important;
+  border-color: #d1d5db !important;
+  color: #374151 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.el-button--default:hover {
+  background: #f9fafb !important;
+  border-color: #9ca3af !important;
+  color: #111827 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 链接按钮样式 */
+.el-button.is-link {
+  height: auto !important;
+  padding: 4px 8px !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-weight: 500 !important;
+}
+
+.el-button.is-link:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.el-button--primary.is-link {
+  color: #3b82f6 !important;
+}
+
+.el-button--primary.is-link:hover {
+  color: #2563eb !important;
+  background: rgba(59, 130, 246, 0.1) !important;
+}
+
+.el-button--danger.is-link {
+  color: #ef4444 !important;
+}
+
+.el-button--danger.is-link:hover {
+  color: #dc2626 !important;
+  background: rgba(239, 68, 68, 0.1) !important;
+}
+
+.el-button--warning.is-link {
+  color: #f59e0b !important;
+}
+
+.el-button--warning.is-link:hover {
+  color: #d97706 !important;
+  background: rgba(245, 158, 11, 0.1) !important;
+}
+
+/* 小尺寸按钮 */
+.el-button--small {
+  height: 28px !important;
+  padding: 0 12px !important;
+  font-size: 13px !important;
+}
+
+/* 大尺寸按钮 */
+.el-button--large {
+  height: 40px !important;
+  padding: 0 20px !important;
+  font-size: 16px !important;
+}
+
+/* 表格操作按钮样式 */
+.el-table .el-button.is-link {
+  padding: 2px 6px !important;
+  font-size: 13px !important;
+  margin: 0 2px !important;
+}
+
+/* 表单按钮组样式 */
+.el-form-item .el-button + .el-button {
+  margin-left: 8px;
+}
+
+/* 工具栏按钮样式 */
+.filter-card .el-button,
+.toolbar .el-button {
+  height: 32px !important;
+}
+
+/* 对话框按钮样式 */
+.el-dialog__footer .el-button {
+  min-width: 80px !important;
+}

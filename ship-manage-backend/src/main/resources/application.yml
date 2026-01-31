@@ -1,0 +1,56 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DB_URL:jdbc:mysql://localhost:3306/ship_management?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=UTF-8}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:123456}
+
+  mybatis-plus:
+    configuration:
+      map-underscore-to-camel-case: true # ????????
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # ????? SQL ?????????
+
+  mail:
+    host: smtp.resend.com
+    port: 587
+    username: ${RESEND_USERNAME:resend}
+    password: ${RESEND_API_KEY:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true    # 587 端口必须开启 STARTTLS
+            required: true
+
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+
+  servlet:
+    multipart:
+      max-file-size: 50MB      # 单个文件最大大小 (默认是 1MB)
+      max-request-size: 50MB   # 整个请求最大大小 (默认是 10MB)
+
+resend:
+  api-key: ${RESEND_API_KEY:}
+  from-email: ${RESEND_FROM_EMAIL:}
+
+s3:
+  endpoint: ${S3_ENDPOINT:}
+  region: ${S3_REGION:}
+  access-key: ${S3_ACCESS_KEY:}
+  secret-key: ${S3_SECRET_KEY:}
+  bucket-name: ${S3_BUCKET_NAME:}
+
+cloudflare:
+  turnstile:
+    secret-key: ${TURNSTILE_SECRET_KEY:}
+    url: "https://challenges.cloudflare.com/turnstile/v0/siteverify"
+
+# JWT 配置
+jwt:
+  secret: ${JWT_SECRET:your-256-bit-secret-key-here-must-be-at-least-32-characters}
+  expiration: 12  # Token 过期时间（小时）

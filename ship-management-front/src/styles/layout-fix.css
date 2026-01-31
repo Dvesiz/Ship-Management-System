@@ -1,0 +1,329 @@
+/* 页面布局修复样式 */
+
+/* 统一页面头部样式 */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-title {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.page-subtitle {
+  font-size: 14px !important;
+  color: var(--text-secondary) !important;
+  margin: 0 !important;
+}
+
+.header-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* 统一筛选卡片样式 */
+.filter-card {
+  margin-bottom: 16px;
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+.filter-card .el-card__body {
+  padding: 16px 20px !important;
+}
+
+.filter-card .el-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.filter-card .el-form-item {
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+}
+
+.filter-card .el-form-item:last-child {
+  margin-left: auto;
+}
+
+/* 统一表格卡片样式 */
+.table-card {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  overflow: hidden;
+}
+
+.table-card .el-card__body {
+  padding: 0 !important;
+}
+
+/* 统一表格样式 */
+.el-table {
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.el-table .el-table__header-wrapper {
+  background: var(--bg-secondary) !important;
+}
+
+.el-table .el-table__header th {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 16px 12px !important;
+}
+
+.el-table .el-table__body tr {
+  transition: background-color 0.2s ease;
+}
+
+.el-table .el-table__body tr:hover {
+  background: var(--bg-secondary) !important;
+}
+
+.el-table .el-table__body td {
+  padding: 14px 12px !important;
+  border-bottom: 1px solid var(--border-light) !important;
+  color: var(--text-primary) !important;
+}
+
+/* 统一分页样式 */
+.pagination {
+  margin-top: 0 !important;
+  padding: 16px 20px !important;
+  background: var(--bg-secondary) !important;
+  border-top: 1px solid var(--border-color) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* 统一统计卡片样式 */
+.stats-row {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.stat-card .el-card__body {
+  padding: 24px !important;
+}
+
+.stat-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.stat-info {
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 4px !important;
+}
+
+.stat-label {
+  font-size: 14px !important;
+  color: var(--text-secondary) !important;
+  font-weight: 500 !important;
+}
+
+/* 统一对话框样式 */
+.el-dialog {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+
+.el-dialog__header {
+  background: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 20px 24px !important;
+}
+
+.el-dialog__title {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+}
+
+.el-dialog__body {
+  padding: 24px !important;
+}
+
+.el-dialog__footer {
+  background: var(--bg-secondary) !important;
+  border-top: 1px solid var(--border-color) !important;
+  padding: 16px 24px !important;
+}
+
+/* 统一表单样式 */
+.el-form-item__label {
+  font-weight: 500 !important;
+  color: var(--text-primary) !important;
+  font-size: 14px !important;
+}
+
+.el-input,
+.el-select,
+.el-date-editor {
+  width: 100%;
+}
+
+.el-input__wrapper {
+  border-radius: 8px !important;
+  border: 1px solid var(--border-color) !important;
+  transition: all 0.2s ease !important;
+}
+
+.el-input:focus-within .el-input__wrapper {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .stats-row .el-col {
+    margin-bottom: 16px;
+  }
+  
+  .filter-card .el-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filter-card .el-form-item:last-child {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .header-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .filter-card .el-form-item {
+    width: 100%;
+  }
+  
+  .table-card {
+    overflow-x: auto;
+  }
+}
+
+/* 统一对话框底部按钮样式 */
+.dialog-footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dialog-footer .el-button {
+  min-width: 80px;
+  height: 36px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.dialog-footer .el-button + .el-button {
+  margin-left: 0;
+}
+
+/* 表格操作按钮统一样式 */
+.table-action-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-action-buttons .el-button {
+  padding: 4px 8px;
+  font-size: 13px;
+  height: auto;
+  line-height: 1.4;
+}
+
+.table-action-buttons .el-button.is-link {
+  padding: 2px 6px;
+}
+
+/* 搜索栏统一样式 */
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  padding: 16px 20px;
+  background: var(--toolbar-bg);
+  border: 1px solid var(--toolbar-border);
+  border-radius: var(--border-radius-md);
+  margin-bottom: 20px;
+}
+
+.search-bar .el-form-item {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.search-bar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

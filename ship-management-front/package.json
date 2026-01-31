@@ -1,0 +1,29 @@
+{
+  "name": "ship-manage-front",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "axios": "^1.13.2",
+    "echarts": "^6.0.0",
+    "element-plus": "^2.13.0",
+    "pinia": "^3.0.4",
+    "sass": "^1.97.1",
+    "vue": "^3.5.24",
+    "vue-i18n": "^9.14.5",
+    "vue-router": "^4.6.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.11",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/language-server": "^3.2.2",
+    "vite": "^7.2.4"
+  }
+}
